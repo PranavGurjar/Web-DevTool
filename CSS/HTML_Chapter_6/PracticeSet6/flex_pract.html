@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Pract</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            padding: 34px;
+        }
+
+        li{
+            list-style: none;
+            display: inline;
+            padding: 0 43px;
+        }
+
+        header{
+            background-color: black;
+            color: white;        
+        }
+
+        body{
+            background-color: gray;
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left{
+            height: 80vh;
+            width: 40vw;
+            background-color: aqua;
+        }
+
+        .right{
+            height: 80vh;
+            width: 40vw;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. In debitis eveniet cupiditate aliquid, necessitatibus eum, cumque natus consectetur maiores quo fugiat reiciendis corporis qui laudantium praesentium ipsum error iure autem.</div>
+        <div class="right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, voluptatum? Necessitatibus, recusandae error ea architecto culpa voluptatibus, reprehenderit consequatur sapiente magnam dicta non quas nemo earum, similique doloremque inventore. Suscipit quis ducimus modi iusto ab doloremque soluta enim eius quasi.</div>
+    </div>
+</body>
+</html>
