@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .container{
+            background-color: red;
+            color: white;
+            height: 455px;
+        }
+        .box{
+            border: 2px solid black;
+            display: inline-block;
+            
+            /*
+            transform: translate(134px, 56px) rotateX(45deg);
+            transform-origin: 0;
+
+            transform: translate(134px, 56px) rotate(45deg);
+            transform: scale(4, 7);
+            transform: scaleX(8);
+            transform: scaleY(8);
+            transform: skew(110deg, 10deg);
+            transform: skew(10deg, 10deg);
+            */
+            
+        }
+        img:hover {
+            width: 56px;
+        }
+        img{
+            /*
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 3s;
+            */
+            width: 146px;
+            height: 50px;
+            transition: width 1s ease-in-out 2s, height 4s ease-in;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myImage" src="./images/nature.jpg" alt="nature" width="200px" height="150px">
+            <button id="btn">Toggle</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    btn.addEventListener("click", ()=>{
+        if(myImage.style.width === "546px"){
+            myImage.style.width = "146px"
+        }
+        else {
+            myImage.style.width = "546px"
+        }
+
+        if(myImage.style.height === "150px"){
+            myImage.style.height = "50px"
+        }
+        else {
+            myImage.style.height = "150px"
+        }
+    })
+</script>
+
+</html>

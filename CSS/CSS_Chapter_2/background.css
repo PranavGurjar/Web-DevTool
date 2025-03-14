@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 334px;
+    height: 1744px;
+    /* background-image: url("background.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 63px 45px; */
+    border: 2px solid red;
+    /* background-position: center; */
+    /* background-color: rgb(93, 26, 184); */
+    /* background-attachment: fixed; */
+    color: white;
+
+    background: red url("background.jpg") no-repeat fixed top left;
+}
+
+body{
+   
+}
